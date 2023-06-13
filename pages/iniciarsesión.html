@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inciar sesión</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobrewes.html">Sobre Wes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/filmografía.html">Filmografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/análisisynovedades.html">Análisis y novedades</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--logo-->
+                <a class="navbar-brand" href="#">
+                    <img src="../Assets/img/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    AndersonWorld
+                </a>
+                <!--botón iniciar sesión-->
+                <a class="btn btn-primary" href="/pages/iniciarsesión.html" role="button">Iniciar sesión</a>
+                <!--buscador-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="iniciar-sesión section-padding">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text center text white pb-5">
+                        <h1>Wes Anderson <br>Fan club</h1>
+                        <p>Querido andersoniano, inicia sesión en tu cuenta para recibir las últimas novedades. recomendaciones personalizadas y mucho más!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 pb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <p><a class="link-opacity-100-hover" href="#">¿olvidaste tu contraseña?</a></p>
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                        <p><a class="link-opacity-100-hover" href="#">¿todavía no sos miembro?</a></p>
+                        <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--pie de página-->
+    <footer class="bg-light text-dark pt-5 pm-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="text-center mb-2">
+                        <a class="navbar-brand" href="#">
+                            <img src="../Assets/img/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                            AndersonWorld
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="text-center mb-2">
+                        <h5>Anderson World Digital 2023</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-dark"> <i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://es-la.facebook.com/people/Wes-Anderson/100044594042599/" class="text-dark"> <i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/accidentalwes?lang=es" class="text-dark"> <i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/accidentalwes?lang=es" class="text-dark"> <i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </footer>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

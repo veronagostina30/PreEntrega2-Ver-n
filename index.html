@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobrewes.html">Sobre Wes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/filmografía.html">Filmografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/análisisynovedades.html">Análisis y novedades</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--logo-->
+                <a class="navbar-brand" href="#">
+                    <img src="Assets/img/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    AndersonWorld
+                </a>
+                <!--botón iniciar sesión-->
+                <a class="btn btn-primary" href="/pages/iniciarsesión.html" role="button">Iniciar sesión</a>
+                <!--buscador-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <!--Main-->
+    <!--sección bienvenida-->
+    <main>
+        <h1>¡Bienvenidos a AndersonWorld!</h1>
+        <p>Este es un sitio dedicado a celebrar la obra del aclamado director y guionista Wes Anderson, conocido por sus películas únicas y visualmente impresionantes.</p>
+        <div class="card" style="width: 18rem;">
+            <img src="Assets/img/foto-portada.jpg" class="card-img-top" alt="Foto de Wes Anderson">
+            <a href="#" class="btn btn-primary mt-3">Leer más sobre Wes</a>
+        </div>
+    </main>
+    
+    <!--sección filmografía -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/img/The-french-dispatch-poster.jpg" class="d-block w-100" alt="poster de the french dispatch">
+                        <div class="carousel-caption d-none d-md-block">
+                        <a href="" class="btn btn-primary mt-3"> Ver más</a>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/img/the-grand-budapest-hotel-poster.jpg" class="d-block w-100" alt="póster de el gran hotel budapest">
+                    <div class="carousel-caption d-none d-md-block">
+                    <a href="" class="btn btn-primary mt-3"> Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/img/the-fantastic-mr-fox-poster.jpg" class="d-block w-100" alt="póster de the fantastic mr fox">
+                    <div class="carousel-caption d-none d-md-block">
+                    <a href="" class="btn btn-primary mt-3"> Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <!--sección novedades-->
+    <section class="novedades">
+        <div class="title text-center">
+            <h2>Mira las últimas novedades</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="card" style="width:18rem;">
+                        <img src="Assets/img/asteroid-city-poster.jpg" class="card-img-top" alt="póster de asteroid city">
+                            <div class="card-body">
+                                <h5 class="card-title">Asteroid City, la nueva película de Wes Anderson</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn bg-primary text-white">Leer más</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="card" style="width:18rem;">
+                        <img src="Assets/img/simetría-portada.png" class="card-img-top" alt="Foto ilustrativa simetría de Wes Anderson">
+                        <div class="card-body">
+                            <h5 class="card-title">La simetría en el mundo de Wes Anderson</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn bg-primary text-white">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="card" style="width:18rem;">
+                        <img src="Assets/img/colores-portada.jpg" class="card-img-top" alt="foto ilustrativa colores andersonianos">
+                        <div class="card-body">
+                            <h5 class="card-title">Teoría del color según Wes Anderson: personajes tristes en un mundo colorido</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button class="btn bg-primary text-white">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--pie de página-->
+    <footer class="bg-light text-dark pt-5 pm-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="text-center mb-2">
+                        <a class="navbar-brand" href="#">
+                            <img src="Assets/img/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                            AndersonWorld
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="text-center mb-2">
+                        <h5>Anderson World Digital 2023</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mx-auto mt-4">
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-dark"> <i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://es-la.facebook.com/people/Wes-Anderson/100044594042599/" class="text-dark"> <i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/accidentalwes?lang=es" class="text-dark"> <i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/accidentalwes?lang=es" class="text-dark"> <i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </footer>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
